@@ -50,15 +50,13 @@
               "buildOptimizer": true,
               "budgets": [
                 {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "type": "bundle",
+                  "name": "main",
+                  "baseline": "300kb",
+                  "error": "20%",
+                  "warning": "10%"
                 }
+                
               ]
             }
           }
